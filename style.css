@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #334;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-gap: 15px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.videos {
+    box-shadow: 0 0px 30px rgba(0,0,0.7);
+    cursor: pointer;
+    margin-bottom: 20px;
+    height: 167px;
+}
+.videos:hover {
+    box-shadow: 0 0px 30px rgb(243, 33, 33);
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.videos:hover iframe {
+    transform: scale(1.1);
+    box-shadow: 0 0px 30px rgb(243, 33, 33,0.3);
+}
+h1 {
+    text-align: center;
+}
